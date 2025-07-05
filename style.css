@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.photobooth-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+video {
+    border: 5px solid #333;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Sembunyikan canvas sampai kita butuh */
+canvas {
+    display: none; 
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: #e04050;
+}
+
+#downloadLink {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2ed573;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#downloadLink.hidden {
+    display: none;
+}
